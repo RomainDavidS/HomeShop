@@ -1,10 +1,11 @@
 package com.enedis.romaindavid.homeshop;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Bill {
     private Customer customer;
-    private Map<Product, Integer> products;
+    private Map<Product, Integer> products = new HashMap<Product, Integer>();
 
     public Bill(Customer customer) {
         this.customer = customer;
@@ -16,7 +17,7 @@ public class Bill {
      * @param quantity quantity of the product
      */
     public void addProduct(Product product, Integer quantity) {
-        this.products.put(product, quantity);
+        this.products.put( product, quantity);
     }
 
     public Customer getCustomer() {
@@ -26,4 +27,6 @@ public class Bill {
     public Map<Product, Integer> getProducts() {
         return products;
     }
+
+
 }
