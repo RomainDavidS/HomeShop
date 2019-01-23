@@ -2,7 +2,7 @@ package com.enedis.romaindavid.miam;
 
 public class Main {
     public static void main(String[] args) {
-        Four grandFour = new Four();
+        /*Four grandFour = new Four();
         grandFour.capacite = 55;
         grandFour.puissance = 260;
 
@@ -13,6 +13,8 @@ public class Main {
         System.out.println("");
         grandFour.cuire(cake);
         System.out.println("");
-        cake.manger();
+        cake.manger();*/
+        Four four = new Four();
+        four.cuire(30, 15);
     }
 }

@@ -30,6 +30,8 @@ public class Bill {
         return products;
     }
     public void generate(Writer writer ){
+        if (products.isEmpty())
+            throw new NoProductInBillException();
         writer.start();
         writer.writeLine("HomeShop compagnie");
         writer.writeLine("1 Place Charles de Gaulle, 75008 Paris");
