@@ -5,4 +5,8 @@ public class WarehouseDelivery implements Delivery {
     public double getPrice() {
         return 0;
     }
+    @Override
+    public String getInfo(){
+        return "Retrait à l'entrepot à" + getPrice() +"€";
+    }
 }
