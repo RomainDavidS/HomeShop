@@ -4,7 +4,8 @@ package com.enedis.romaindavid.miam;
 public class Four {
     int puissance;
     int capacite;
-
+    private Resistance resistance;
+    private Soufflerie soufflerie;
     /**
      *
      */
@@ -15,5 +16,20 @@ public class Four {
         System.out.println("et ma puissance de " + puissance + " degrés.");
         aliment.estCuit = true;
     }
+
+
+    public void cuire(int temperature, int duree) {
+    }
+
+    private void maintenir(){
+
+    }
+    public Resistance getResistance() {
+        return resistance;
+    }
+    public void setSoufflerie(Soufflerie soufflerie) {
+        this.soufflerie = soufflerie;
+    }
+
 
 }
